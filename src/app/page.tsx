@@ -19,7 +19,7 @@ export default function Home() {
           Check Your <span className="text-red-600">fitness</span> in seconds.
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-          Calcu is a women's fitness project offering tailored diet plans and
+          Calcu is a women&apos;s fitness project offering tailored diet plans and
           exercise routines for optimized wellness and vitality.
         </p>
 
