@@ -1,18 +1,16 @@
 "use client";
 
-import React from "react";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
-import { GanttChart } from 'lucide-react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="h-screen bg-white p-4">
-      <h4 className="text-zinc-400 text-sm">MAIN MENU</h4>
+    <div className="h-screen bg-white p-4 space-y-1">
+      <Link href='/dashboard' className="text-xl font-bold font-sans px-3">Calcu</Link>
+      <h4 className="text-zinc-400 text-sm p-3">MAIN MENU</h4>
       {sidebarLinks.map((item: any) => {
         const isActive =
           pathname === item.route || pathname.startsWith(`${item.route}/`);
@@ -22,13 +20,12 @@ const Sidebar = () => {
             href={item.route}
             key={item.label}
             className={cn(
-              "flex gap-4 items-center p-4 rounded-lg justify-start",
+              "flex gap-4 items-center hover:bg-zinc-100 p-3 rounded-lg justify-start w-64",
               {
-                "bg-red-500": isActive,
+                "bg-red-500 hover:bg-red-500 text-white": isActive,
               }
             )}
           >
-            {/* <Image src={item.imgURL} alt={item.label} width={24} height={24} /> */}
             <item.Icon />
             <p className="text-lg font-semibold">{item.label}</p>
           </Link>

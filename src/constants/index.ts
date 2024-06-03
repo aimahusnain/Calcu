@@ -14,8 +14,8 @@ export const sidebarLinks = [
   },
   {
     Icon: Activity,
-    route: "/exercieses",
-    label: "Exercieses",
+    route: "/exercises",
+    label: "Exercises",
   },
   {
     Icon: Hop,
