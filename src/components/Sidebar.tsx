@@ -4,11 +4,14 @@ import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import MobileSidebar from "./MobileSidebar";
 
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="h-screen bg-white p-4 space-y-1">
+    <>
+    <MobileSidebar />
+    <div className="h-screen hidden md:block bg-white p-4 space-y-1">
       <Link href='/dashboard' className="text-xl font-bold font-sans px-3">Calcu</Link>
       <h4 className="text-zinc-400 text-sm p-3">MAIN MENU</h4>
       {sidebarLinks.map((item: any) => {
@@ -32,6 +35,7 @@ const Sidebar = () => {
         );
       })}
     </div>
+      </>
   );
 };
 

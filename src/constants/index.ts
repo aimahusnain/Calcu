@@ -1,12 +1,7 @@
 import { GanttChart, BarChart3, Activity, Hop, SquarePlus } from "lucide-react";
 
 export const sidebarLinks = [
-  {
-    Icon: GanttChart,
-    route: "/dashboard",
-    label: "Overview",
-  },
-
+  
   {
     Icon: BarChart3,
     route: "/performance",
@@ -16,6 +11,11 @@ export const sidebarLinks = [
     Icon: Activity,
     route: "/exercises",
     label: "Exercises",
+  },
+  {
+    Icon: GanttChart,
+    route: "/dashboard",
+    label: "Overview",
   },
   {
     Icon: Hop,
