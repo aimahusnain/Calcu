@@ -18,7 +18,7 @@ const MobileSidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="md:hidden block">
+    <div className="sm:hidden block">
       {/* <Sheet>
         <SheetTrigger>
           <Button variant="ghost">
@@ -27,7 +27,7 @@ const MobileSidebar = () => {
         </SheetTrigger>
         <SheetContent side="left" className="space-y-1 md:hidden block">
           <Link href="/dashboard" className="text-xl font-bold font-sans px-3">
-            Calcu
+            FitHub
           </Link>
           <h4 className="text-zinc-400 text-sm p-3">MAIN MENU</h4>
           {sidebarLinks.map((item: any) => {
