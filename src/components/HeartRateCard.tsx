@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { Target } from "lucide-react";
 import { motion } from "framer-motion";
@@ -13,13 +15,19 @@ const HeartRateCard: React.FC<HeartRateCardProps> = ({
   description,
   type,
 }) => {
-  const definetype = type === "Purple" ? "#bbcbff" : type === "Blue" ? "#bae9fe" : "#f4c5ff";
+  const definetype =
+    type === "Purple"
+      ? "#bbcbff"
+      : type === "Blue"
+      ? "#bae9fe"
+      : "#f4c5ff";
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      whileHover={{ translateY: -5 }} // Move the card up by 5px when hovered
       style={{ backgroundColor: definetype }}
       className="rounded-2xl p-6 w-56 shadow-lg"
     >

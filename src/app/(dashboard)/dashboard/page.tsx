@@ -3,6 +3,7 @@
 import HeartRateCard from "@/components/HeartRateCard";
 import React from "react";
 import { motion } from "framer-motion";
+import OverviewGraph from "@/components/OverviewGraph";
 
 const Dashboard = () => {
   const container = {
@@ -46,6 +47,9 @@ const Dashboard = () => {
           <HeartRateCard type="Pink" title="Glucose Level" description="80 BPM" />
         </motion.div>
       </motion.div>
+      <h2 className="text-2xl font-bold">Activity</h2>
+      {/* Add a graph Here! */}
+      <OverviewGraph />
     </div>
   );
 };
