@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <>
     <MobileSidebar />
-    <div className="h-screen hidden sm:block bg-white p-4">
+    <div className="h-screen hidden sm:block sticky top-0 bg-white p-4">
       <Link href='/dashboard' className="text-xl font-bold font-sans md:px-3 px-0">FitHub</Link>
       <h4 className="text-zinc-400 text-sm p-3 md:block hidden">MAIN MENU</h4>
       <div className="md:mt-0 mt-7">

@@ -29,7 +29,7 @@ const HeartRateCard: React.FC<HeartRateCardProps> = ({
       transition={{ duration: 0.5 }}
       whileHover={{ translateY: -5 }} // Move the card up by 5px when hovered
       style={{ backgroundColor: definetype }}
-      className="rounded-2xl p-6 w-56 shadow-lg"
+      className="rounded-2xl p-6 w-[17rem] shadow-lg"
     >
       <div className="p-3 bg-white w-fit rounded-2xl mb-5">
         <Target className="text-blue-500" />
